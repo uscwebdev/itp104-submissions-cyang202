@@ -9,50 +9,122 @@
             }
 
             img {
-                height: 200 px;
+                max-height: 50%;
                 width: auto;
+            }
+
+            #main {
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #name_mail {
+                padding: 15px;
+            }
+
+            .wrappers {
+                padding: 15px;
+            }
+
+            #wrapper_1 {
+                display: flex;
+                justify-content: center;
+                /* padding: 15px; */
+            }
+
+            .row_1 {
+                /* 900px - 15px padding left - 15px padding right = 870px
+                870px / 2 = 435px */
+                width: 435px;
+                height: 400px;
+            }
+
+            #wrapper_2 {
+                display: flex;
+                justify-content: center;
+                /* padding: 15px; */
+            }
+
+            .row_2 {
+                width: 435px;
             }
         </style>
     </head>
 
     <body>
-        <h1>Cheny Yang</h1>
+        <div id="main">
 
-        <p>Email: <a href="mailto:chenyyan@usc.edu">chenyyan@usc.edu</a></p>
+            <div id="name_mail">
 
-        <p>Favorite Color: <strong>Lavender</strong></p>
+                <h1>Cheny Yang</h1>
 
-        <p>Favorite Website: <a target="_blank" href="https://us.maje.com/en/shop-by-autumn-winter-all/?gclid=Cj0KCQjw9fqnBhDSARIsAHlcQYRRQt_UtYbhAmJC3FVyJwRR724DRP9YNeVha-V4Tq7dO4M8oDJ2CDQaAp7yEALw_wcB">Maje</a></p>
+                <p>Email: <a href="mailto:chenyyan@usc.edu">chenyyan@usc.edu</a></p>
 
-        <p>Favorite Activity:</p>
-        
-        <img src="Labs/Lab_02/kpop_dance.png" alt="Kpop Dances">
+            </div>
 
-        <p>Fall 2023 Schedule:</p>
+            <hr>
 
-        <ul>
-            <li>ITP 104: Web Publishing</li>
-            <li>CHEM 105a: General Chemistry</li>
-            <li>WRIT 150: Writing and Critical Reasoning</li>
-            <li>PSYC 274: Introduction to Statistics</li>
-        </ul>
+            <div class="wrappers" id="wrapper_1">
 
-        <hr>
+                <div class="row_1" id="color_web_act">
+                    <p>Favorite Color: <strong>Lavender</strong></p>
 
-        <p>Assignments:</p>
+                    <p>Favorite Website: <a target="_blank" href="https://us.maje.com/en/shop-by-autumn-winter-all/?gclid=Cj0KCQjw9fqnBhDSARIsAHlcQYRRQt_UtYbhAmJC3FVyJwRR724DRP9YNeVha-V4Tq7dO4M8oDJ2CDQaAp7yEALw_wcB">Maje</a></p>
 
-        <ul>
-            <li><a target="_blank" href="Assignments/Assignment_01/Resume.html">Assignment 1</a></li>
-            <li><a target="_blank" href="Assignments/Assignment_02/assignment_2.html">Assignment 2</a></li>
-        </ul>
+                    <p>Favorite Activity:</p>
+                    
+                    <img src="Labs/Lab_02/kpop_dance.png" alt="Kpop Dance">
 
-        <p>Labs:</p>
+                </div>
 
-        <ul>
-            <li><a target="_blank" href="index.html">Lab 2</a></li>
+                    <div class="row_2" id="schedule">
 
-            <li><a target'"_blank" href="Labs/Lab_03/Resume_copy.html">Lab 3</a></li>
-        </ul>
+                    <p>Fall 2023 Schedule:</p>
+
+                    <ul>
+                        <li>ITP 104: Web Publishing</li>
+                        <li>CHEM 105a: General Chemistry</li>
+                        <li>WRIT 150: Writing and Critical Reasoning</li>
+                        <li>PSYC 274: Introduction to Statistics</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="wrappers" id="wrapper_2">
+
+                <div class="row_2" id="assignments">
+
+                    <p>Assignments:</p>
+
+                    <ul>
+                        <li><a target="_blank" href="Assignments/Assignment_01/Resume.html">Assignment 1</a></li>
+                        <li><a target="_blank" href="Assignments/Assignment_02/assignment_2.html">Assignment 2</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="row_2" id="labs">
+
+                    <p>Labs:</p>
+
+                    <ul>
+                        <li><a target="_blank" href="index.html">Lab 2</a></li>
+
+                        <li><a target="_blank" href="Labs/Lab_03/Resume_copy.html">Lab 3</a></li>
+
+                        <li><a target="_blank" href="index.html">Lab 4</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+    
+        </div>
 
     </body>
 </html>
