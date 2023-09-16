@@ -12,34 +12,46 @@
             }
  
             img {
-                max-width: 20%;
-                height: auto;
+                float: right;
+                margin-left: 20px;
             }
 
             body {
                 background-color:lavender;
             }
 
-            #whole {
+            #main {
                 width: 800px;
                 margin-left: auto;
                 margin-right: auto;
-
+                padding: 20px;
                 background-image: url("img/paper.jpeg");
             }
 
             .icon {
-                float: right;
+                max-width: 10%;
+                height: auto;
             }
 
             .dates {
                 float: right;
             }
+
+            #lang {
+                max-width: 25%;
+                height: auto;
+            }
+
+            #danc {
+                max-width: 24%;
+                height: auto;
+            }
+
         </style>
     </head>
 
     <body>
-        <div id="whole">
+        <div id="main">
             <h1>Cheny Yang</h1>
 
             <h5>
@@ -58,27 +70,21 @@
     
             <h2>Objective</h2>
 
-            <p>Diligent college student interested in developing skills in design. Detail-oriented and organized. Prepared and willing to expand my creative skill sets.</p>
-
             <img class="icon" src="img/design.png" alt="design logo">
+
+            <p>Diligent college student interested in developing skills in design. Detail-oriented, organized, and efficient in managing tasks. Prepared and willing to expand my creative skill sets.</p>
 
             <h2>Education</h2>
 
-            <p><strong>University of Southern California</strong></p>
+            <p><strong>University of Southern California</strong><span class="dates">Aug 2022 ~ Present</span></p>
 
-            <p class="dates">Aug 2022 ~ Present</p>
-
-            <p><strong>'Iolani School</strong></p>
-
-            <p class="dates">Aug 2019 ~ May 2022</p>
+            <p><strong>'Iolani School</strong><span class="dates">Aug 2019 ~ May 2022</span></p>
 
             <h2>Experience</h2>
 
             <p><strong>Performing Arts Co-Chair</strong></p>
 
-            <p><em>Korean Culture Night Club, USC</em> </p>
-                
-            <p class="dates">Jan 2023 ~ Present</p>
+            <p><em>Korean Culture Night Club, USC</em><span class="dates">Jan 2023 ~ Present</span></p>
                 
             <ul>
                 <li>Directed dance performance for annual show</li> 
@@ -88,9 +94,7 @@
 
             <p><strong>Reslife Prefect</strong></p>
 
-            <p><em>Residential Life Leadership Program, 'Iolani School</em></p>
-                
-            <p class="dates">Aug 2020 ~ Jun 2022</p>
+            <p><em>Residential Life Leadership Program, 'Iolani School</em><span class="dates">Aug 2020 ~ Jun 2022</span></p>
                 
             <ul>
                 <li>Led weekly dorm student council meetings; participated in student council executive meetings </li>
@@ -101,9 +105,7 @@
 
             <p><strong>Student Tutor</strong></p>
     
-            <p><em>'Iolani School</em></p>
-                
-            <p class="dates">Aug 2019 ~ Jun 2021</p>
+            <p><em>'Iolani School</em><span class="dates">Aug 2019 ~ Jun 2021</span></p>
 
             <ul>
                 <li>Met with various students to help with test prep and homework in several subjects: chemistry, algebra, geometry</li>
@@ -113,6 +115,8 @@
 
             <p><strong>Programming Languages</strong></p>
             
+            <img id="lang" src="img/language.png" alt="language">
+
             <ul>
                 <li>C++</li>
                 <li>HTML,CSS</li>
@@ -123,12 +127,13 @@
             
             <ul>
                 <li>Korean</li>
+
+                <img id="danc" src="img/ballet.jpg" alt="dance">
+
                 <li>Chinese</li>
             </ul>
 
-            <img class="icon" src="img/language.png" alt="language">
-
-            <p><strong>Dances</strong></p>
+            <p><strong>Dance</strong></p>
 
             <ul>
                 <li>K-pop</li>
