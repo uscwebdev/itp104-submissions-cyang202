@@ -23,30 +23,33 @@
             }
 
             .form-row {
-                margin: 20px 20px;
+                margin: 20px 25px;
+                text-align: right;
                 display: flex;
             }
 
             .left-col {
                 width: 150px;
+                margin-right: 20px;
             }
 
             #order {
                 background-color:burlywood;
                 color:white;
+                margin-right: 10px;
             }
 
             #reset {
                 background-color:white; 
             }
 
+            .box {
+                width: 485px;
+            }
+
         </style>
     </head>
     <body>
-        <!-- Questions:
-        how to make textbox wide
-        do we have to change font?
-        add space between order and reset buttons? -->
 
         <div id="header">
             <h1>Cake Order Form</h1>
@@ -56,18 +59,18 @@
             <form action="confirmation.html">
                 <div class="form-row">
                     <div class="left-col enter_text">
-                        <label for="name-id">First Name:</label>
+                        <label for="first_name-id">First Name:</label>
                     </div>
 
-                    <input type="name" id="name-id" placeholder="Strawberry">
+                    <input type="text" id="first_name-id" class="box" placeholder="Strawberry">
                 </div>
 
                 <div class="form-row">
                     <div class="left-col">
-                        <label for="name-id">Last Name:</label>
+                        <label for="last_name-id">Last Name:</label>
                     </div>
 
-                    <input type="name" id="name-id" placeholder="Shortcake">
+                    <input type="text" id="last_name-id" class="box" placeholder="Shortcake">
                 </div>
 
                 <div class="form-row">
@@ -75,7 +78,7 @@
                         <label for="text-id">Phone Number:</label>
                     </div>
 
-                    <input type="text" id="text-id" placeholder="(123) 123-1234">
+                    <input type="text" id="text-id" class="box" placeholder="(123) 123-1234">
                 </div>
 
                 <div class="form-row">
@@ -83,15 +86,15 @@
                         <label for="email-id">Email:</label>
                     </div>
 
-                    <input type="email" id="email-id" placeholder="abcd@gmail.com">
+                    <input type="email" id="email-id" class="box" placeholder="abcd@gmail.com">
                 </div>
 
                 <div class="form-row">
                     <div class="left-col">
-                        Shape:
+                        <label for="dropdown-id">Shape:</label>
                     </div>
 
-                    <select>
+                    <select id="dropdown-id" class="box">
 
                         <option>Round</option>
 
@@ -104,7 +107,7 @@
 
                 <div class="form-row">
                     <div class="left-col">
-                        Cake Flavor:
+                        <label>Cake Flavor:</label>
                     </div>
 
                     <label>
@@ -135,7 +138,7 @@
                 
                 <div class="form-row">
                     <div class="left-col">
-                        Frosting Flavor:
+                        <label>Frosting Flavor:</label>
                     </div>
 
                     <label>
@@ -161,7 +164,7 @@
 
                 <div class="form-row">
                     <div class="left-col">
-                    Decorations:
+                        <label>Decorations:</label>
                     </div>
 
                     <label>
@@ -182,10 +185,11 @@
                 
                 <div class="form-row">
                     <div class="left-col">
-                    Please enter the word/sentence if you selected the lettering option:
+                        <label for="textarea-id">Please enter the word/sentence to be written
+                        on the cake if you selected the lettering option:</label>
                     </div>
 
-                    <textarea></textarea>
+                    <textarea id="textarea-id" class="box"></textarea>
                 </div>
 
                 <div class="form-row">
