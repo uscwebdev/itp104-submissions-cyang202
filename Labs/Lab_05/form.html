@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cake Order Form</title>
+        <style>
+            body {
+                background-color:floralwhite;
+            }
+
+            #header {
+                font-size: 1.5em;
+                text-align: center;
+                height: 100px;
+                line-height: 100px;
+
+                color:saddlebrown;
+            }
+
+            #main {
+                width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .form-row {
+                margin: 20px 20px;
+                display: flex;
+            }
+
+            .left-col {
+                width: 150px;
+            }
+
+            #order {
+                background-color:burlywood;
+                color:white;
+            }
+
+            #reset {
+                background-color:white; 
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- Questions:
+        how to make textbox wide
+        do we have to change font?
+        add space between order and reset buttons? -->
+
+        <div id="header">
+            <h1>Cake Order Form</h1>
+        </div>
+
+        <div id="main">
+            <form action="confirmation.html">
+                <div class="form-row">
+                    <div class="left-col enter_text">
+                        <label for="name-id">First Name:</label>
+                    </div>
+
+                    <input type="name" id="name-id" placeholder="Strawberry">
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        <label for="name-id">Last Name:</label>
+                    </div>
+
+                    <input type="name" id="name-id" placeholder="Shortcake">
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        <label for="text-id">Phone Number:</label>
+                    </div>
+
+                    <input type="text" id="text-id" placeholder="(123) 123-1234">
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        <label for="email-id">Email:</label>
+                    </div>
+
+                    <input type="email" id="email-id" placeholder="abcd@gmail.com">
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        Shape:
+                    </div>
+
+                    <select>
+
+                        <option>Round</option>
+
+                        <option>Squared</option>
+
+                        <option>Heart</option>
+
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        Cake Flavor:
+                    </div>
+
+                    <label>
+                        <input type="radio" name="flavor">
+                        Vanilla
+                    </label>
+
+                    <label>
+                        <input type="radio" name="flavor">
+                        Chocolate
+                    </label>
+
+                    <label>
+                        <input type="radio" name="flavor">
+                        Strawberry
+                    </label>
+
+                    <label>
+                        <input type="radio" name="flavor">
+                        Red Velvet
+                    </label>
+                
+                    <label>
+                        <input type="radio" name="flavor">
+                        Carrot
+                    </label>
+                </div>   
+                
+                <div class="form-row">
+                    <div class="left-col">
+                        Frosting Flavor:
+                    </div>
+
+                    <label>
+                        <input type="radio" name="frosting">
+                        Vanilla Buttercream
+                    </label>
+
+                    <label>
+                        <input type="radio" name="frosting">
+                        Chocolate
+                    </label>
+
+                    <label>
+                        <input type="radio" name="frosting">
+                        Strawberry
+                    </label>
+
+                    <label>
+                        <input type="radio" name="frosting">
+                        Oreo
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                    Decorations:
+                    </div>
+
+                    <label>
+                        <input type="checkbox">
+                        Fruits
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Flowers
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Lettering
+                    </label>
+                </div>
+                
+                <div class="form-row">
+                    <div class="left-col">
+                    Please enter the word/sentence if you selected the lettering option:
+                    </div>
+
+                    <textarea></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col"></div>
+
+                    <label>
+                        <input type="checkbox">
+                        I accept terms & conditions.
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col"></div>
+                    
+                    <button type="submit" id="order">Order</button>
+                    <button type="reset" id="reset">Reset</button>
+                </div>
+
+            </form>
+        </div>
+    </body>
+</html>
