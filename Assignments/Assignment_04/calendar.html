@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>March 2024 Calendar</title>
+        <style>
+            body {
+                background-color: lavenderblush;
+                margin: 0px;
+            }
+
+            h1 {
+                margin: 0px;
+            }
+
+            #header {     
+                height: 230px;
+                line-height: 230px;
+                text-align: center;
+                font-size: 1.7em;
+                color: #FFF;
+                text-shadow: 0px 0px 10px #000;
+
+                background-color: white;
+                background-image: url(img/background.jpeg);
+                background-size: cover;
+                background-position: center;
+
+                width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #main {
+                width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            th {
+                border: 1px solid lightsteelblue;
+                border-bottom: 3px solid lightsteelblue;
+                text-align: center;
+                background-color: seashell;
+
+                /* 
+                800px - 8px = 792px
+                792px / 7 = 113.14px; 
+                */
+                width: 113.14px;
+                padding: 5px 0px;
+            }
+
+            td {
+                border: 1px solid lightsteelblue;
+                width: 113.14px;
+                height: 113px;
+                text-align: right;
+                vertical-align: text-top;
+                padding: 0px 5px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            .other_month {
+                color: gray;
+            }
+
+            #Saturday {
+                color: cornflowerblue;
+            }
+
+            #Sunday {
+                color: indianred;
+            }
+
+            .event {
+                background-size: cover;
+                background-position: center;
+            }
+
+            .event_name {
+                text-align: center;
+            }
+
+            #event1 {
+                background-image: url(img/daylight.jpeg);
+                color: midnightblue;
+            }
+
+            #event2 {
+                background-image: url(img/St_Patrick’s_Day.jpeg);
+                color: teal;
+            }
+
+            #event3 {
+                background-image: url(img/birthday.jpeg);
+                color: mediumvioletred;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>March 2024</h1>
+        </div>
+
+        <div id="main">
+            <table>
+                <tr>
+                    <th id="Sunday">Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th id="Saturday">Sat</th>
+                </tr>
+
+                <tr>
+                    <td class="other_month">25</td>
+                    <td class="other_month">26</td>
+                    <td class="other_month">27</td>
+                    <td class="other_month">28</td>
+                    <td class="other_month">29</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td id="event1" class="event"><strong>10</strong>
+                        <p class="event_name"><strong>Daylight Saving Time</strong></p>
+                    </td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td id="event2" class="event"><strong>17</strong>
+                        <p class="event_name"><strong>St. Patrick's Day</strong></p>
+                    </td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td id="event3" class="event"><strong>27</strong>
+                        <p class="event_name"><strong>Cheny's Birthday</strong></p>
+                    </td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td class="other_month">1</td>
+                    <td class="other_month">2</td>
+                    <td class="other_month">3</td>
+                    <td class="other_month">4</td>
+                    <td class="other_month">5</td>
+                    <td class="other_month">6</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
