@@ -6,9 +6,98 @@
         <link rel="stylesheet" href="main.css">
 
         <style>
+            #header {
+                height: 400px;
+                line-height: 400px;
+                background-image: url("img/gallery_background.jpeg");
+                background-position: top;
+            }
+            
             #main {
                 margin-left: auto;
                 margin-right: auto;
+                width: 800px;
+            }
+
+            #history {
+                font-size: 1.5em;
+                color: rosybrown;
+            }
+
+            .wrapper {
+                width: 800px;
+                display: flex;
+                flex-wrap: wrap;
+                color:darkslategray;
+                background-color: gainsboro;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .item {
+                background-color: white;
+                height: 200px;
+                margin: 5px;
+                padding: 5px;
+            }
+
+            #item1 {
+                width: 350px;
+                margin-left: 10px;
+            }
+
+            #item2 {
+                width: 190px;
+            }
+
+            #item3 {
+                width: 190px;
+                margin-right: 10px;
+            }
+
+            #item4 {
+                width: 270px;
+                margin-left: 10px;
+                height: 250px;
+            }
+
+            #item5 {
+                width: 480px;
+                margin-right: 10px;
+                height: 250px;
+            }
+
+            #item6 {
+                width: 170px;
+                margin-left: 10px;
+                height: 300px;
+            }
+
+            #item7 {
+                width: 390px;
+                height: 300px;
+            }
+
+            #item8 {
+                width: 170px;
+                height: 300px;
+                margin-right: 10px;
+            }
+
+            #item9 {
+                width: 375px;
+                height: 200px;
+                margin-left: 10px;
+            }
+
+            #item10 {
+                width: 375px;
+                margin-right: 10px;
+            }
+
+            #navbar a:hover, #navbar #highlight-gallery {
+                color: gray;
+                background-color: whitesmoke;
             }
         </style>
     </head>
@@ -18,9 +107,28 @@
             <h1>Photo Gallery</h1>
         </div>
 
-        <div id="main">
-            <p>images</p>
+        <div id="navbar">
+            <a class="menu" id="highlight-home" href="assignment_5.html#header">Home</a>
+            <a class="menu" id="highlight-gallery" href="gallery.html#header">Gallery</a>
         </div>
+
+        <div id="main">
+            <h2 id="history">History of K-pop Girl Groups</h2>
+
+            <div class="wrapper">
+                <p class="item" id="item1">1</p>
+                <p class="item" id="item2">2</p>
+                <p class="item" id="item3">3</p>
+                <p class="item" id="item4">4</p>
+                <p class="item" id="item5">5</p>
+                <p class="item" id="item6">6</p>
+                <p class="item" id="item7">7</p>
+                <p class="item" id="item8">8</p>
+                <p class="item" id="item9">9</p>
+                <p class="item" id="item10">10</p>
+            </div>
+        </div>
+
 
         <div id="footer">
             Cheny Yang &copy; 2023

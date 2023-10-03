@@ -6,6 +6,15 @@
         <link rel="stylesheet" href="main.css">
 
         <style>
+            #header {
+                height: 600px;
+                line-height: 600px;
+                background-image: url("img/bp_cover.jpg");
+                background-position: center;
+            }
+            #main {
+                width: 600px;
+            }
 
             #wrapper {
                 display: flex;
@@ -16,6 +25,7 @@
                 background-color: lightsteelblue;
                 width: 200px;
                 padding: 15px;
+                padding-top: 10px;
             }
 
             #dancing {
@@ -43,8 +53,24 @@
             }
 
             .songs {
-                height: 100px;
-                width: auto;
+                width: 190px;
+                height: auto;
+                margin-left: 5px;
+                margin-right: 5px;
+                opacity: 0.7;
+            }
+
+            .songs:hover {
+                opacity: 1.0
+            }
+
+            .img-container > p {
+                text-align: center;
+                visibility: hidden;
+            }
+
+            .songs:hover + p {
+                visibility: visible;
             }
 
             .section {
@@ -63,6 +89,11 @@
                 color: darkslategray;
             }
 
+            #navbar a:hover, #navbar #highlight-home {
+                color: gray;
+                background-color: whitesmoke;
+            }
+
         </style>
     </head>
 
@@ -72,7 +103,8 @@
         </div>
 
         <div id="navbar">
-            <a id="highlight-nav" href="assignment_5.html">Home</a>
+            <a class="menu" id="highlight-home" href="assignment_5.html#header">Home</a>
+            <a class="menu" id="highlight-gallery" href="gallery.html#header">Gallery</a>
         </div>
 
     <div id="wrapper">
@@ -130,37 +162,43 @@
 
             <p class="dec"><strong>2000's</strong></p>
 
-                <img class="songs" src="img/pretty_girl.jpg" alt="Pretty Girl">
+                <div class="img-container">
+                    <img class="songs" src="img/pretty_girl.jpg" alt="Pretty Girl">
+                    <p class="year"><em>"Pretty Girl"-KARA (2008)</em></p>
+                </div>
 
-                <p class="year"><em>"Pretty Girl"-KARA (2008)</em></p>
-
-                <img class="songs" src="img/gee.jpg" alt="Gee">
-
-                <p class="year"><em>"Gee"-SNSD (2009)</em></p>
+                <div class="img-container">
+                    <img class="songs" src="img/gee.jpg" alt="Gee">
+                    <p class="year"><em>"Gee"-SNSD (2009)</em></p>
+                </div>
 
             <p class="dec"><strong>2010's</strong></p>
-
+            <div class="img-container">
                 <img class="songs" src="img/hoot.jpg" alt="Hoot">
-
                 <p class="year"><em>"Hoot"-SNSD (2010)</em></p>
-
+            </div>
+                
+            <div class="img-container">
                 <img class="songs" src="img/mr_chu.jpg" alt="Mr.Chu">
-
                 <p class="year"><em>"Mr.Chu"-Apink (2014)</em></p>
-
+            </div>
+                
+            <div class="img-container">
                 <img class="songs" src="img/as_if.jpg" alt="As If It's Your Last">
-
                 <p class="year"><em>"As If It's Your Last"-Blackpink (2017)</em></p>
+            </div>
 
             <p class="dec"><strong>2020's</strong></p>
 
+            <div class="img-container">
                 <img class="songs" src="img/lovesick.jpg" alt="Lovesick Girls"> 
-
                 <p class="year"><em>"Lovesick Girls"-Blackpink (2020)</em></p>
+            </div>
 
+            <div class="img-container">
                 <img class="songs" src="img/spicy.jpg" alt="spicy">
-
                 <p class="year"><em>"Spicy"-Aespa (2023)</em></p>
+            </div>
 
         </div>
     </div>
