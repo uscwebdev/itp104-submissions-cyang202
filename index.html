@@ -3,6 +3,8 @@
     <head>
         <title>Cheny Yang | Student Page</title>
 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <style>
             strong {
                 background-color: lavender
@@ -33,7 +35,7 @@
                 /* padding: 15px; */
             }
 
-            .row_1 {
+            .col_1 {
                 /* 900px - 15px padding left - 15px padding right = 870px
                 870px / 2 = 435px */
                 width: 435px;
@@ -46,8 +48,22 @@
                 /* padding: 15px; */
             }
 
-            .row_2 {
+            .col_2 {
                 width: 435px;
+            }
+
+            @media (max-width: 767px) {
+                #wrapper_1 {
+                    flex-direction: column;
+                }
+
+                #wrapper_2 {
+                    flex-direction: column;
+                }
+
+                body {
+                    margin: 0px;
+                }
             }
         </style>
     </head>
@@ -67,7 +83,7 @@
 
             <div class="wrappers" id="wrapper_1">
 
-                <div class="row_1" id="color_web_act">
+                <div class="col_1" id="color_web_act">
                     <p>Favorite Color: <strong>Lavender</strong></p>
 
                     <p>Favorite Website: <a target="_blank" href="https://us.maje.com/en/shop-by-autumn-winter-all/?gclid=Cj0KCQjw9fqnBhDSARIsAHlcQYRRQt_UtYbhAmJC3FVyJwRR724DRP9YNeVha-V4Tq7dO4M8oDJ2CDQaAp7yEALw_wcB">Maje</a></p>
@@ -78,7 +94,7 @@
 
                 </div>
 
-                    <div class="row_2" id="schedule">
+                    <div class="col_2" id="schedule">
 
                     <p>Fall 2023 Schedule:</p>
 
@@ -97,7 +113,7 @@
 
             <div class="wrappers" id="wrapper_2">
 
-                <div class="row_2" id="assignments">
+                <div class="col_1" id="assignments">
 
                     <p>Assignments:</p>
 
@@ -117,7 +133,7 @@
 
                 </div>
 
-                <div class="row_2" id="labs">
+                <div class="col_2" id="labs">
 
                     <p>Labs:</p>
 
@@ -133,6 +149,8 @@
                         <li><a target="_blank" href="Labs/Lab_06/photo_gallery.html">Lab 6</a></li>
 
                         <li><a target="_blank" href="Labs/Lab_07/puzzle.html">Lab 7</a></li>
+
+                        <li><a target="_blank" href="index.html">Lab 8</a></li>
                     </ul>
 
                 </div>
