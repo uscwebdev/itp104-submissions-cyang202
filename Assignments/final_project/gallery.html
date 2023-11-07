@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo Gallery</title>
+
+        <link rel="stylesheet" href="main.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Farsan&display=swap" rel="stylesheet">
+
+        <style>
+            #header {
+                height: 400px;
+                line-height: 400px;
+                background-image: url("img/gallery_background.jpeg");
+                background-position: top;
+            }
+            
+            #main {
+                margin-left: auto;
+                margin-right: auto;
+                width: 800px;
+            }
+
+            #history {
+                font-size: 2.5em;
+                font-family:  Farsan, cursive;
+                color: rosybrown;
+                margin: 5px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            #navbar a:hover, #navbar #highlight-gallery {
+                color: dimgray;
+                background-color: whitesmoke;
+            }
+
+            .wrapper {
+                width: 800px;
+                display: flex;
+                flex-wrap: wrap;
+                color:darkslategray;
+                background-color: gainsboro;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .img-container-1 {
+                overflow: hidden; 
+                position: relative;
+
+                margin: 5px;
+                padding: 0px;
+                width: 350px;
+                height: 180px;
+                margin-left: 10px;
+            }
+
+            .img-container-1 > img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                bottom: 5px;
+            }
+
+            .img-container-2 {
+                overflow: hidden; 
+                position: relative;
+
+                margin: 5px;
+                padding: 0px;
+                width: 205px;
+                height: 180px;
+            }
+
+            .img-container-2 > img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                bottom: 15px;
+            }
+
+            .img-container-3 {
+                overflow: hidden; 
+                position: relative;
+
+                margin: 5px;
+                margin-right: 10px;
+                padding: 0px;
+                width: 205px;
+                height: 180px;
+            }
+
+            .img-container-3 > img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                bottom: 5px;
+            }
+
+            .img-container-4 {
+                overflow: hidden; 
+                position: relative;
+
+                margin: 5px;
+                margin-left: 10px;
+                padding: 0px;
+                width: 290px;
+                height: 250px;
+            }
+
+            .img-container-4 > img {
+                height: 100%;
+                width: auto;
+                position: relative;
+                right: 45px;
+            }
+
+            .img-container-5 {
+                overflow: hidden; 
+                position: relative;
+
+                margin: 5px;
+                margin-right: 10px;
+                padding: 0px;
+                width: 480px;
+                height: 250px;
+            }
+
+            .img-container-5 > img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                bottom: 55px;
+            }
+
+            .img-container-6 {
+                overflow: hidden; 
+                position: relative;
+
+                margin: 5px;
+                margin-left: 10px;
+                padding: 0px;
+                width: 190px;
+                height: 230px;
+            }
+
+            .img-container-6 > img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                bottom: 10px;
+            }
+
+            .img-container-7 {
+                overflow: hidden; 
+                position: relative;
+
+                margin: 5px;
+                padding: 0px;
+                width: 335px;
+                height: 230px;
+            }
+
+            .img-container-7 > img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                bottom: 10px;
+            }
+
+            .img-container-8 {
+                overflow: hidden; 
+                position: relative;
+
+                margin: 5px;
+                margin-right: 10px;
+                padding: 0px;
+                width: 235px;
+                height: 230px;
+            }
+
+            .img-container-8 > img {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .img-container-9 {
+                overflow: hidden; 
+                position: relative;
+
+                margin: 5px;
+                margin-left: 10px;
+                padding: 0px;
+                width: 380px;
+                height: 200px;
+            }
+
+            .img-container-9 > img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                bottom: 30px;
+                right: 10px;
+            }
+
+            .img-container-10 {
+                overflow: hidden; 
+                position: relative;
+
+                margin: 5px;
+                margin-right: 10px;
+                padding: 0px;
+                width: 390px;
+                height: 200px;
+            }
+
+            .img-container-10 > img {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+
+                background-color: rgba(0,0,0,0.3);
+                color: #FFF;
+                text-align: center;
+
+                padding-top: 75px;
+                align-items: center;
+                visibility: hidden;
+
+                font-family: sans-serif;
+            }
+
+            .overlay1 {
+                padding-top: 105px;
+            }
+
+            .overlay2 {
+                padding-top: 90px;
+            }
+
+            .overlay3 {
+                padding-top: 90px;
+            }
+
+            .font1 {
+                font-size: 1.1em;
+            }
+
+            .font2 {
+                font-size: 1.2em;
+            }
+
+            .img-container-1:hover > .overlay {
+                visibility: visible;
+            }
+
+            .img-container-2:hover > .overlay {
+                visibility: visible;
+            }
+
+            .img-container-3:hover > .overlay {
+                visibility: visible;
+            }
+
+            .img-container-4:hover > .overlay {
+                visibility: visible;
+            }
+
+            .img-container-5:hover > .overlay {
+                visibility: visible;
+            }
+
+            .img-container-6:hover > .overlay {
+                visibility: visible;
+            }
+
+            .img-container-7:hover > .overlay {
+                visibility: visible;
+            }
+
+            .img-container-8:hover > .overlay {
+                visibility: visible;
+            }
+
+            .img-container-9:hover > .overlay {
+                visibility: visible;
+            }
+
+            .img-container-10:hover > .overlay {
+                visibility: visible;
+            }
+
+            #timeline {
+                color: dimgray;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>Photo Gallery</h1>
+        </div>
+
+        <div id="navbar">
+            <ul id="top-menu">
+                <li>
+                    <a class="menu" id="highlight-home" href="assignment_6.html#header">Home</a>
+                    
+                    <ul class="sub-menu">
+                        <li><a href="assignment_6.html#background">Background</a></li>
+    
+                        <li><a href="assignment_6.html#learning">How I Learn Dances</a></li>
+    
+                        <li><a href="assignment_6.html#song_preferences">Song Preferences</a></li>
+                    </ul>
+    
+                </li>
+    
+                <li>
+                    <a class="menu" id="highlight-gallery" href="gallery.html#header">Gallery</a>
+                    
+                    <ul class="sub-menu">
+                        <li><a href="gallery.html#history">History of K-pop Girl Groups</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="main">
+            <h2 id="history">History of K-pop Girl Groups</h2>
+
+            <p id="timeline">1st generation: 1994~2003  |  2nd generation: 2004~2013  |  
+                3rd generation: 2014~2018   |  4th generation: 2019~present</p>
+
+            <div class="wrapper">
+
+                <div class="img-container-1">
+                    <img src="img/girl_group_history/ses.jpeg" alt="SES">
+                    <div class="overlay font1">SES(1997~2002)-1st generation girl group</div>
+                </div>
+
+                <div class="img-container-2">
+                    <img src="img/girl_group_history/finkl.jpeg" alt="FINKL">
+                    <div class="overlay">Fin.K.L.(1998~2002)-1st generation girl group</div>
+                </div>
+
+                <div class="img-container-3">
+                    <img src="img/girl_group_history/kara.jpg" alt="KARA">
+                    <div class="overlay">KARA(2007~present)-2nd generation girl group</div>
+                </div>
+
+                <div class="img-container-4">
+                    <img src="img/girl_group_history/wonder_girls.jpeg" alt="Wonder Girls">
+                    <div class="overlay overlay3 font2">Wonder Girls(2007~2017)-2nd generation girl group</div>
+                </div>
+
+                <div class="img-container-5">
+                    <img src="img/girl_group_history/snsd.jpg" alt="SNSD">
+                    <div class="overlay overlay3 font2">Girl's Generation(2007~present)-2nd generation girl group</div>
+                </div>
+
+                <div class="img-container-6">
+                    <img src="img/girl_group_history/red_velvet.jpeg" alt="Red Velvet">
+                    <div class="overlay overlay2">Red Velvet(2014~present)-3rd generation girl group</div>
+                </div>
+
+                <div class="img-container-7">
+                    <img src="img/girl_group_history/twice.jpeg" alt="Twice">
+                    <div class="overlay overlay1 font1">Twice(2016~present)-3rd generation girl group</div>
+                </div>
+
+                <div class="img-container-8">
+                    <img src="img/girl_group_history/blackpink.jpeg" alt="BLACKPINK">
+                    <div class="overlay overlay1">BLACKPINK(2016~present)-3rd generation girl group</div>
+                </div>
+
+                <div class="img-container-9">
+                    <img src="img/girl_group_history/le_sserafim.jpeg" alt="LE SSERAFIM">
+                    <div class="overlay overlay3 font1">LE SSERAFIM(2022~present)-4th generation girl group</div>
+                </div>
+
+                <div class="img-container-10">
+                    <img src="img/girl_group_history/newjeans.jpeg" alt="Newjeans">
+                    <div class="overlay overlay3 font1">NewJeans(2022~present)-4th generation girl group</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer">
+            Cheny Yang &copy; 2023
+        </div>
+    </body>
+</html>
