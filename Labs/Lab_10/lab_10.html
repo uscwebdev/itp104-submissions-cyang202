@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Favorite Desserts</title>
+
+        <style>
+            h1 {
+                text-align: center;
+                font-size: 3em;
+                color: rgb(241, 157, 171);
+            }
+
+            img {
+                width: 400px;
+                height: auto;
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+            }
+            
+            #img_1 {
+                position: relative;
+                left: 320px;
+                top: 50px;
+                transition: all 1s;
+            }
+
+            #rotate:hover #img_1 {
+                transform: scale(1) rotate(10deg) translate(-200px,-30px);
+            }
+
+            #img_2 {
+                position: relative;
+                left: 70px;
+                top: 100px;
+                transition: all 1s;
+            }
+
+            #rotate:hover #img_2 {
+                transform: scale(1) rotate(20deg) translate(100px,260px);
+            }
+
+            #img_3 {
+                position: relative;
+                right: 160px;
+                top: 150px;
+                transition: all 1s;
+            }
+
+            #rotate:hover #img_3 {
+                transform: scale(1) rotate(-10deg) translate(210px,-180px);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Favorite Desserts</h1>
+
+        <div id="rotate" class="container">
+            <div id="translate_1">
+                <div id="img_1">
+                    <img src="img/cupcakes.jpeg" alt="cupcakes">
+                </div>
+            </div>
+    
+            <div  id="translate_2">
+                <div id="img_2">
+                    <img src="img/mochi.jpeg" alt="mochi">
+                </div>
+            </div>
+    
+            <div id="translate_3">
+                <div id="img_3">
+                    <img src="img/roll_cakes.jpeg" alt="roll_cakes">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
