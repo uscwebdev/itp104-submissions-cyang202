@@ -14,11 +14,12 @@
                 font-family: "title font";
             }
 
+            /* remove body width and make margin 0??? */
             body {
                 margin: 0px;
-                margin-left: auto;
+                /* margin-left: auto;
                 margin-right: auto;
-                width: 1366px;
+                width: 1366px; */
                 color: #011627;
                 background-color: #011627;
             }
@@ -59,13 +60,12 @@
                 background-color: #011627;
             }
 
-            #navbar a {
+            #navbar li {
                 color: #DBDBDB;
                 display: block;
                 height: 28px;
                 line-height: 30px;
                 font-family: "Playfair Display", serif;
-                /* margin-left: 300px; */
                 border-bottom: 2px solid #011627;
             }
 
@@ -75,15 +75,50 @@
                 justify-content: center;
             }
 
+            #top-menu li {
+                display: block;
+                float: left;
+                width: 25%;
+                text-align: center;
+            }
+
             #navbar ul {
                 list-style: none;
                 padding: 0px;
                 margin: 0px;
+                margin-left: auto;
+                margin-right: auto;
                 position: relative;
             }
 
+            .sub-menu {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                /* width: 100%; */
+                flex-direction: column;
+            }
+
+            #sub-menu-1 {
+                width: 100%;
+            }
+
+            #sub-menu-2 {
+                width: 66%;
+            }
+
+            #sub-menu-3 {
+                width: 50%;
+            }
+
+            #sub-menu-4 {
+                width: 50%;
+            }
+
+
+
             #navbar li {
-                width: 341px;
+                /* width: 341px; */
                 text-align: center;
             }
 
@@ -94,10 +129,10 @@
                 line-height: 30px;
             }
 
-            #sub-menu ul {
+            /* #sub-menu ul {
                 top: 0px;
-                /* left: 200px; */
-            }
+                left: 200px;
+            } */
 
             #top-menu ul {
                 position: absolute;
@@ -117,7 +152,7 @@
             }
 
             #des_container {
-                width: 1346px;
+                /* width: 1346px; */
                 background-color: #747572;
                 padding: 10px;
                 margin-left: auto;
@@ -255,14 +290,14 @@
             <ul id="top-menu">
                 <li>
                     <a class="menu">Main</a>
-                    <ul class="sub-menu">
+                    <ul class="sub-menu" id="sub-menu-1">
                         <li>Keywords of This Season</li>
                     </ul>
                 </li>
 
                 <li>
                     <a class="menu">Styles</a>
-                    <ul class="sub-menu">
+                    <ul class="sub-menu" id="sub-menu-2">
                         <li>Old Money</li>
 
                         <li>Office Core</li>
@@ -273,7 +308,7 @@
 
                 <li>
                     <a class="menu">Fashion Items</a>
-                    <ul class="sub-menu">
+                    <ul class="sub-menu" id="sub-menu-3">
                         <li>Outer</li>
 
                         <li>Tops</li>
@@ -286,7 +321,7 @@
 
                 <li>
                     <a class="menu">Colors/Material</a>
-                    <ul class="sub-menu">
+                    <ul class="sub-menu" id="sub-menu-4">
                         <li>Colors</li>
 
                         <li>Material</li>
