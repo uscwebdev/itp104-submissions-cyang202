@@ -34,6 +34,8 @@ h1 {
     height: 30px;
     background-color: #011627;
     color: #DBDBDB;
+    line-height: 30px;
+    font-size: 0.3em;
 } 
 #navbar {
     background-color: #DBDBDB;
@@ -61,8 +63,8 @@ h1 {
 #top-menu li {
     display: block;
     float: left;
-    /* width: 25%; */
-    width: 33.3%;
+    width: 25%;
+    /* width: 33.3%; */
     text-align: center;
 }
 #navbar ul {
@@ -86,8 +88,8 @@ h1 {
 }
 
 #sub-menu-2 {
-    /* width: 66%; */
-    width: 67%;
+    width: 66%;
+    /* width: 67%; */
 }
 
 #sub-menu-3 {
@@ -95,7 +97,7 @@ h1 {
 }
 
 #sub-menu-4 {
-    width: 50%;
+    width: 100%;
 }
 
 #navbar li {

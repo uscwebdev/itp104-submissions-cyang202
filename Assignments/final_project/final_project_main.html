@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>23 F/W Fashion Trends | Home</title>
+        <title>F/W 23 Fashion Trends | Home</title>
 
         <meta name="description" content="main page of fashion trends of Fall/Winter 2023 including main themes/keywords 
         as well as trending styles, designs, color, and material of outfits this season">
@@ -105,7 +105,7 @@
                 height: auto;
                 margin: 10px;
                 position: relative;
-                left: 700px;
+                left: 760px;
             }
 
             .img-container_2 {
@@ -146,20 +146,27 @@
                 color: white;
             }
 
-            .img-container_1:hover > .overlay {
-                visibility: visible;
+            .img-container_1:hover {
+                cursor: pointer;
+                transition: all 1s ease;
+                transform: translateX(-100px);
             }
 
-            .img-container_2:hover > .overlay {
-                visibility: visible;
+            .img-container_2:hover {
+                cursor: pointer;
+                transition: all 1s ease;
+                transform: translateX(170px);
             }
 
-            .img-container_3:hover > .overlay {
-                visibility: visible;
+            .img-container_3:hover {
+                cursor: pointer;
+                transition: all 1s ease;
+                transform: translateX(-70px);
             }
 
             #footer {
                 line-height: 20px;
+                font-size: 0.9em;
             }
         </style>
     </head>
@@ -185,32 +192,26 @@
                     </ul>
                 </li>
 
-                <!-- <li>
-                    <a class="menu" href="final_project_page_3.html#header">Fashion Items</a>
-                    <ul class="sub-menu" id="sub-menu-3">
-                        <li><a href="final_project_page_3.html#item_1">Outer</a></li>
-
-                        <li><a href="final_project_page_3.html#item_2">Top</a></li>
-
-                        <li><a href="final_project_page_3.html#item_3">Bottom</a></li>
-
-                        <li><a href="final_project_page_3.html#item_4">Shoes/Accessories</a></li>
-                    </ul>
-                </li> -->
-
                 <li>
                     <a class="menu" href="final_project_page_3.html#header">Colors/Material</a>
-                    <ul class="sub-menu" id="sub-menu-4">
+                    <ul class="sub-menu" id="sub-menu-3">
                         <li><a href="final_project_page_3.html#title_colors">Colors</a></li>
 
                         <li><a href="final_project_page_3.html#title_material">Material</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="menu" href="final_project_summary.html#header">Project Summary</a>
+                    <ul class="sub-menu" id="sub-menu-4">
+                        <li><a href="final_project_summary.html#content">Summary</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
 
         <div id="header">
-            <h1>2023 F/W Fashion Trends</h1>
+            <h1>F/W 23 Fashion Trends</h1>
         </div>
 
         <div id="main">
@@ -235,14 +236,12 @@
                 <div class="img-container_1">
                     <img src="img/keywords/classic.jpeg" alt="Classic">
 
-                    <div class="overlay">
-                        <div>Classic looks are timeless: though their outfits include simple designs that might seem plain,
-                            they do not look outdated and look stylish in any period of time. Classic outfits also convey an 
-                            elegant, high-class mood that is associated with the old money aesthetic. Most classic designs use
-                            monochrome colors such as black, gray, and white, and neutral colors, such as ivory, beige, 
-                            navy, and brown. Examples of classic outfits include basic cardigans, sweaters, straight plants, pleated skirts,
-                            flats, and loafters.
-                        </div>
+                    <div class="overlay" id="overlay-1">Classic looks are timeless: though their outfits include simple designs that might seem plain,
+                        they do not look outdated and look stylish in any period of time. Classic outfits also convey an 
+                        elegant, high-class mood that is associated with the old money aesthetic. Most classic designs use
+                        monochrome colors such as black, gray, and white, and neutral colors, such as ivory, beige, 
+                        navy, and brown. Examples of classic outfits include basic cardigans, sweaters, straight plants, pleated skirts,
+                        flats, and loafters.
                     </div>
                 </div>
             </div>
@@ -253,7 +252,7 @@
                 <div class="img-container_2">
                     <img src="img/keywords/black_white.jpeg" alt="Black_White">
 
-                    <div class="overlay">Inspired by the popularity of simple outfits, as well as the office core style, 
+                    <div class="overlay" id="overlay-2">Inspired by the popularity of simple outfits, as well as the office core style, 
                         black and white clothing have also been a major fashion trend this season. The combination of black and white - two
                         monochrome colors that are highly contrasting - creates a modern look. Black and white also suits the mood of winter, 
                         which is mostly associated with coldness and lack of color. 
@@ -267,7 +266,7 @@
                 <div class="img-container_3">
                     <img src="img/keywords/silhouette.jpeg" alt="Silhouette">
 
-                    <div class="overlay">Numerous outfits that reveal body silhouettes have been presented on runway shows of many fashion brands this season. 
+                    <div class="overlay" id="overlay-3">Numerous outfits that reveal body silhouettes have been presented on runway shows of many fashion brands this season. 
                             Most of these clothings incorporate a wider design on the top and bottom
                             and a narrower design on the waist, resembling an hourglass shape.
                             Due to the popular trend in outfits that emphasize body silhouettes, skirts - which are more voluminous than pants - have become a major
@@ -279,5 +278,26 @@
         <div id="footer">
             Cheny Yang &copy; 2023
         </div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <script>
+            $('.img-container_1').click(function(){
+                $('.overlay').css('visibility','hidden');
+                $('#overlay-1').css('visibility','visible');
+            })
+
+            $('.img-container_2').click(function(){
+                $('.overlay').css('visibility','hidden');
+                $('#overlay-2').css('visibility','visible');
+            })
+
+            $('.img-container_3').click(function(){
+                $('.overlay').css('visibility','hidden');
+                $('#overlay-3').css('visibility','visible');
+            })
+        </script>
+
+
     </body>
 </html>
